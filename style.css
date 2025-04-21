@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+
+body {
+  margin: 0;
+  background: #000;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #27c39f; /* Turquoise lumineux façon Nautilus */
+    font-size: clamp(2rem, 5vw, 4rem); /* Responsive entre 2rem et 4rem */
+    margin: 40px 20px 20px;
+    font-family: 'Michroma', sans-serif; /* Style "journal de bord" */
+    text-shadow: 0 0 8px #195480; /* Effet lumière douce */
+    z-index: 100;
+    position: relative;
+  }
+  
+
+/* === CONTENEUR PRINCIPAL === */
+.hud-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+}
+
+/* === IMAGE DU HUD === */
+.hud-img {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 2; /* <-- important */
+  }
+
+/* === BOUTON EXPLORED === */
+button {
+  position: relative;
+  width: 11em;
+  height: 4em;
+  outline: none;
+  transition: 0.1s;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ddebf0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 0 0.1em;
+}
+
+/* === STRUCTURE DU BOUTON AVEC CLIP ET ANIMATIONS === */
+#clip {
+  --color: #a8ffff;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: 5px double var(--color);
+  box-shadow: inset 0px 0px 15px #195480;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+/* Flèches */
+.arrow {
+  position: absolute;
+  transition: 0.2s;
+  background-color: #a8ffff;
+  top: 35%;
+  width: 11%;
+  height: 30%;
+}
+
+#leftArrow {
+  left: -13.5%;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 50%);
+}
+
+#rightArrow {
+  -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+  left: 110%;
+}
+
+/* Coins lumineux */
+.corner {
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  background-color: #a8ffff;
+  box-shadow: inset 1px 1px 8px #2781c3;
+  transform: scale(1) rotate(45deg);
+  transition: 0.2s;
+}
+
+#rightTop {
+  top: -1.98em;
+  left: 91%;
+}
+
+#leftTop {
+  top: -1.96em;
+  left: -3.0em;
+}
+
+#leftBottom {
+  top: 2.10em;
+  left: -2.15em;
+}
+
+#rightBottom {
+  top: 45%;
+  left: 88%;
+}
+
+/* Hover effects */
+button:hover #rightArrow {
+  background-color: #27c39f;
+  left: -15%;
+  animation: 0.6s ease-in-out both infinite alternate rightArrow8;
+}
+
+button:hover #leftArrow {
+  background-color: #27c39f;
+  left: 110%;
+  animation: 0.6s ease-in-out both infinite alternate leftArrow8;
+}
+
+button:hover .corner {
+  transform: scale(1.25) rotate(45deg);
+}
+
+button:hover #leftTop {
+  animation: 0.1s ease-in-out 0.05s both changeColor8, 0.2s linear 0.4s both lightEffect8;
+}
+button:hover #rightTop {
+  animation: 0.1s ease-in-out 0.15s both changeColor8, 0.2s linear 0.4s both lightEffect8;
+}
+button:hover #rightBottom {
+  animation: 0.1s ease-in-out 0.25s both changeColor8, 0.2s linear 0.4s both lightEffect8;
+}
+button:hover #leftBottom {
+  animation: 0.1s ease-in-out 0.35s both changeColor8, 0.2s linear 0.4s both lightEffect8;
+}
+
+button:hover #clip {
+  animation: 0.2s ease-in-out 0.55s both greenLight8;
+  --color: #27c39f;
+}
+
+/* === ANIMATIONS === */
+@keyframes changeColor8 {
+  from {
+    background-color: #2781c3;
+  }
+  to {
+    background-color: #27c39f;
+  }
+}
+
+@keyframes lightEffect8 {
+  from {
+    box-shadow: 1px 1px 5px #27c39f;
+  }
+  to {
+    box-shadow: 0 0 2px #27c39f;
+  }
+}
+
+@keyframes greenLight8 {
+  to {
+    box-shadow: inset 0px 0px 32px #27c39f;
+  }
+}
+
+@keyframes leftArrow8 {
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes rightArrow8 {
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translateX(-10px);
+  }
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
+  .hud-layout {
+    flex-direction: column;
+  }
+
+  button {
+    margin-top: 20px;
+  }
+}
+
+.site-footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 🔍 transparence sur fond noir */
+    padding: 20px 10px;
+    text-align: center;
+    font-family: 'Michroma', sans-serif;
+    font-size: 0.8rem;
+    color: #27c39f;
+    border-top: 1px solid #195480;
+    position: fixed;     /* 🔽 collé en bas de l’écran */
+    bottom: 0;
+    left: 0;
+    z-index: 10;          /* 🔝 visible au-dessus du fond animé */
+    backdrop-filter: blur(4px); /* 💫 effet de flou chic (facultatif) */
+  }
+  
+  .site-footer a {
+    color: #27c39f;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .site-footer a:hover {
+    color: #2efadf;
+  }
+  
+  @media (max-width: 480px) {
+    .site-footer p {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+  
+  
+  
