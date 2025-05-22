@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f272f17571136208cb7b14f9facad6f4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f272f17571136208cb7b14f9facad6f4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f272f17571136208cb7b14f9facad6f4 = L.map(
+                "map_f272f17571136208cb7b14f9facad6f4",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_46a25d3abdb7ef2510bad7b0c4ec03cd = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_46a25d3abdb7ef2510bad7b0c4ec03cd.addTo(map_f272f17571136208cb7b14f9facad6f4);
+        
+    
+            var marker_cluster_389f0ed90fc9eb29308bd82e8df63552 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_af31a2e7dd960776b4b8f5503296f61a = L.marker(
+                [33.18497, 169.85446],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_adbf22b3d6628a2970651bc4e28df277 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_af31a2e7dd960776b4b8f5503296f61a.setIcon(icon_adbf22b3d6628a2970651bc4e28df277);
+        
+    
+        var popup_5037ac872b50cf2ac7fd2349b51e4f99 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ed0c9d0438d1e38d6b78ad5f2372a75e = $(`<div id="html_ed0c9d0438d1e38d6b78ad5f2372a75e" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Île de Crespo<br>📅 <b>Date :</b> 1er Décembre 1866<br>🌊 <b>Océan/Mer :</b> Océan Pacifique Sud<br>📜 <b>Événement :</b> Début de l'aventure - Première chasse sous-marine - Une forêt sous-marine - Une monstrueuse araignée de mer.<br>↕️ <b>Latitude :</b> 33.18497<br>↔️ <b>Longitude :</b> 169.85446<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Crespo Island<br>📅 <b>Date :</b> December 1st, 1866<br>🌊 <b>Ocean/Sea :</b> South Pacific Ocean<br>📜 <b>Event :</b> Beginning of the adventure - First underwater hunt - A submarine forest - A monstrous sea spider.<br>↕️ <b>Latitude :</b> 33.18497<br>↔️ <b>Longitude :</b> 169.85446<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_5037ac872b50cf2ac7fd2349b51e4f99.setContent(html_ed0c9d0438d1e38d6b78ad5f2372a75e);
+            
+        
+
+        marker_af31a2e7dd960776b4b8f5503296f61a.bindPopup(popup_5037ac872b50cf2ac7fd2349b51e4f99)
+        ;
+
+        
+    
+    
+            var marker_6517164679a77efe1f6218755fbc2507 = L.marker(
+                [9.48786, 177.83569],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_65cd29fb1f6475a648fb911cd4f83a74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6517164679a77efe1f6218755fbc2507.setIcon(icon_65cd29fb1f6475a648fb911cd4f83a74);
+        
+    
+        var popup_27b2958ae60e976a3470157284d5f28c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0366576cf4658bf5b0e4a0b59f715ec3 = $(`<div id="html_0366576cf4658bf5b0e4a0b59f715ec3" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Archipel des Pomotou<br>📅 <b>Date :</b> 11 Décembre 1866<br>🌊 <b>Océan/Mer :</b> Océan Pacifique Sud<br>📜 <b>Événement :</b> Cette archipel couvre une superficie de trois cent soixante-dix lieues carrées, dont une soixantaine de groupes d'îles.<br>↕️ <b>Latitude :</b> 9.48786<br>↔️ <b>Longitude :</b> 177.83569<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Pomotou Archipelago<br>📅 <b>Date :</b> December 11th, 1866<br>🌊 <b>Ocean/Sea :</b> South Pacific Ocean<br>📜 <b>Event :</b> This archipelago covers an area of three hundred seventy square leagues, including about sixty island groups.<br>↕️ <b>Latitude :</b> 9.48786<br>↔️ <b>Longitude :</b> 177.83569<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_27b2958ae60e976a3470157284d5f28c.setContent(html_0366576cf4658bf5b0e4a0b59f715ec3);
+            
+        
+
+        marker_6517164679a77efe1f6218755fbc2507.bindPopup(popup_27b2958ae60e976a3470157284d5f28c)
+        ;
+
+        
+    
+    
+            var marker_3ef8bdb7ca548743c3ca83e621c6c6ba = L.marker(
+                [-16.0667, 164.5333],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_08b6745bc8bac7c73c7a7a1ec0e9c8bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3ef8bdb7ca548743c3ca83e621c6c6ba.setIcon(icon_08b6745bc8bac7c73c7a7a1ec0e9c8bf);
+        
+    
+        var popup_f777d46b6cf636d460ce01664c830250 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_59839aa8dc2a9a0f3895e7591d3017c0 = $(`<div id="html_59839aa8dc2a9a0f3895e7591d3017c0" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Archipel des nouvelles Hébrides<br>📅 <b>Date :</b> 25 Décembre 1866<br>🌊 <b>Océan/Mer :</b> Océan Pacifique Sud<br>📜 <b>Événement :</b> Découverte par Quiros en 1606, que Bougainville explora en 1768, et auquel Cook donna son nom actuel en 1773.<br>↕️ <b>Latitude :</b> -16.0667<br>↔️ <b>Longitude :</b> 164.5333<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,370,999 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> New Hebrides Archipelago<br>📅 <b>Date :</b> December 25th, 1866<br>🌊 <b>Ocean/Sea :</b> South Pacific Ocean<br>📜 <b>Event :</b> Discovered by Quiros in 1606, explored by Bougainville in 1768, and named by Cook in 1773.<br>↕️ <b>Latitude :</b> -16.0667<br>↔️ <b>Longitude :</b> 164.5333<br>🌍🧲 <b>Distance from Earth's center :</b> 6,370,999 meters         </div>     </div>     </div>`)[0];
+                popup_f777d46b6cf636d460ce01664c830250.setContent(html_59839aa8dc2a9a0f3895e7591d3017c0);
+            
+        
+
+        marker_3ef8bdb7ca548743c3ca83e621c6c6ba.bindPopup(popup_f777d46b6cf636d460ce01664c830250)
+        ;
+
+        
+    
+    
+            var marker_7c0410e9dba1cabdb411986d4371f256 = L.marker(
+                [-0.3167, 128.3833],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_b6f7ec93f54884bfebdeccbd1907725e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7c0410e9dba1cabdb411986d4371f256.setIcon(icon_b6f7ec93f54884bfebdeccbd1907725e);
+        
+    
+        var popup_320ba479ed35ddebad6653d802e37224 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3c2788282ae92c177b8c0afba4cc5306 = $(`<div id="html_3c2788282ae92c177b8c0afba4cc5306" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> La Pouasie<br>📅 <b>Date :</b> 4 Janvier 1867<br>🌊 <b>Océan/Mer :</b> Océan Pacifique Sud<br>📜 <b>Événement :</b> Découverte en 1511 par le Portugais Francisco Serrano - Vue sur les sommets des monts Arfak - Quatre jours sur terre - Bataille avec les Papouas.<br>↕️ <b>Latitude :</b> -0.3167<br>↔️ <b>Longitude :</b> 128.3833<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,370,999 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Papua<br>📅 <b>Date :</b> January 4th, 1867<br>🌊 <b>Ocean/Sea :</b> South Pacific Ocean<br>📜 <b>Event :</b> Discovered in 1511 by the Portuguese Francisco Serrano - View of the Arfak Mountains - Four days on land - Battle with the Papuans.<br>↕️ <b>Latitude :</b> -0.3167<br>↔️ <b>Longitude :</b> 128.3833<br>🌍🧲 <b>Distance from Earth's center :</b> 6,370,999 meters         </div>     </div>     </div>`)[0];
+                popup_320ba479ed35ddebad6653d802e37224.setContent(html_3c2788282ae92c177b8c0afba4cc5306);
+            
+        
+
+        marker_7c0410e9dba1cabdb411986d4371f256.bindPopup(popup_320ba479ed35ddebad6653d802e37224)
+        ;
+
+        
+    
+    
+            var marker_d6381464bf8a2329305677711da619ab = L.marker(
+                [-10.7, 136.7667],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_7a021fb7bbf7239a59a5b334c89329a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d6381464bf8a2329305677711da619ab.setIcon(icon_7a021fb7bbf7239a59a5b334c89329a2);
+        
+    
+        var popup_71ae5fe2766d87b3aacdf4e6d81f95ef = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6cc37ef64fc177081bfc8986cab2bb3c = $(`<div id="html_6cc37ef64fc177081bfc8986cab2bb3c" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Cap Wessel<br>📅 <b>Date :</b> 11 janvier 1867<br>🌊 <b>Océan/Mer :</b> Océan Pacifique Sud<br>📜 <b>Événement :</b> Forme la pointe du golfe de Carpentarie.<br>↕️ <b>Latitude :</b> -10.7<br>↔️ <b>Longitude :</b> 136.7667<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Cape Wessel<br>📅 <b>Date :</b> January 11th, 1867<br>🌊 <b>Ocean/Sea :</b> South Pacific Ocean<br>📜 <b>Event :</b> Forms the tip of the Gulf of Carpentaria.<br>↕️ <b>Latitude :</b> -10.7<br>↔️ <b>Longitude :</b> 136.7667<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_71ae5fe2766d87b3aacdf4e6d81f95ef.setContent(html_6cc37ef64fc177081bfc8986cab2bb3c);
+            
+        
+
+        marker_d6381464bf8a2329305677711da619ab.bindPopup(popup_71ae5fe2766d87b3aacdf4e6d81f95ef)
+        ;
+
+        
+    
+    
+            var marker_1d75a2101676cb3a6d644a2245c64abd = L.marker(
+                [-8.6833, 125.7333],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_8013480249c0281a1d1591c8e785e61d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1d75a2101676cb3a6d644a2245c64abd.setIcon(icon_8013480249c0281a1d1591c8e785e61d);
+        
+    
+        var popup_f6c18674a7f3f9a758728252b75b3d25 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_7273287ffae88710cf7598abfb34be87 = $(`<div id="html_7273287ffae88710cf7598abfb34be87" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Mer de Timor<br>📅 <b>Date :</b> 13 janvier 1867<br>🌊 <b>Océan/Mer :</b> Océan Indien<br>📜 <b>Événement :</b> Un homme de l'équipage mort dans la nuit est enterré dans le cimetière sous-marin. Le capitaine Nemo et les siens venaient enterrer leur compagnon dans cette demeure commune, au fond de cet inaccessible océan.<br>↕️ <b>Latitude :</b> -8.6833<br>↔️ <b>Longitude :</b> 125.7333<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Timor Sea<br>📅 <b>Date :</b> January 13th, 1867<br>🌊 <b>Ocean/Sea :</b> Indian Ocean<br>📜 <b>Event :</b> A crew member who died during the night was buried in the underwater cemetery. Captain Nemo and his men came to lay their companion to rest in this common grave, at the bottom of this unreachable ocean.<br>↕️ <b>Latitude :</b> -8.6833<br>↔️ <b>Longitude :</b> 125.7333<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_f6c18674a7f3f9a758728252b75b3d25.setContent(html_7273287ffae88710cf7598abfb34be87);
+            
+        
+
+        marker_1d75a2101676cb3a6d644a2245c64abd.bindPopup(popup_f6c18674a7f3f9a758728252b75b3d25)
+        ;
+
+        
+    
+    
+            var marker_098aec89ddada57d6c5b63dd1dd7b058 = L.marker(
+                [-12.0833, 94.55],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_5d21ea3fae29096b58fd61961d397a6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_098aec89ddada57d6c5b63dd1dd7b058.setIcon(icon_5d21ea3fae29096b58fd61961d397a6a);
+        
+    
+        var popup_201d66fcd6c68eb50585456dbc43f216 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_33728f8cd9e840ec1ffb1e24c5746c15 = $(`<div id="html_33728f8cd9e840ec1ffb1e24c5746c15" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Île Keeling<br>📅 <b>Date :</b> 24 Janvier 1867<br>🌊 <b>Océan/Mer :</b> Océan Indien<br>📜 <b>Événement :</b> Visitée par Darwin et le capitaine Fitz-Roy.<br>↕️ <b>Latitude :</b> -12.0833<br>↔️ <b>Longitude :</b> 94.55<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Keeling Island<br>📅 <b>Date :</b> January 24th, 1867<br>🌊 <b>Ocean/Sea :</b> Indian Ocean<br>📜 <b>Event :</b> Visited by Darwin and Captain Fitz-Roy.<br>↕️ <b>Latitude :</b> -12.0833<br>↔️ <b>Longitude :</b> 94.55<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_201d66fcd6c68eb50585456dbc43f216.setContent(html_33728f8cd9e840ec1ffb1e24c5746c15);
+            
+        
+
+        marker_098aec89ddada57d6c5b63dd1dd7b058.bindPopup(popup_201d66fcd6c68eb50585456dbc43f216)
+        ;
+
+        
+    
+    
+            var marker_cd39bc105d5b30c0b4a8ea9b8d12ef42 = L.marker(
+                [5.9167, 79.7],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_ffdd0f74ddec6c41d65a6317744e5425 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_cd39bc105d5b30c0b4a8ea9b8d12ef42.setIcon(icon_ffdd0f74ddec6c41d65a6317744e5425);
+        
+    
+        var popup_3e0964987a889b48bdb6bb1a8eff5ae5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b366c130d6b8c1749470f78c1c473475 = $(`<div id="html_b366c130d6b8c1749470f78c1c473475" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Golfe du Bengale<br>📅 <b>Date :</b> 27 janvier 1867<br>🌊 <b>Océan/Mer :</b> Océan Indien<br>📜 <b>Événement :</b> Spectacle sinistre ! Des cadavres flottaient à la surface des flots. C'était la mort des villes indiennes.<br>↕️ <b>Latitude :</b> 5.9167<br>↔️ <b>Longitude :</b> 79.7<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,370,999 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Bay of Bengal<br>📅 <b>Date :</b> January 27th, 1867<br>🌊 <b>Ocean/Sea :</b> Indian Ocean<br>📜 <b>Event :</b> A grim spectacle! Corps were floating on the surface of the waves. It was the death of the Indian cities.<br>↕️ <b>Latitude :</b> 5.9167<br>↔️ <b>Longitude :</b> 79.7<br>🌍🧲 <b>Distance from Earth's center :</b> 6,370,999 meters         </div>     </div>     </div>`)[0];
+                popup_3e0964987a889b48bdb6bb1a8eff5ae5.setContent(html_b366c130d6b8c1749470f78c1c473475);
+            
+        
+
+        marker_cd39bc105d5b30c0b4a8ea9b8d12ef42.bindPopup(popup_3e0964987a889b48bdb6bb1a8eff5ae5)
+        ;
+
+        
+    
+    
+            var marker_077abde20919219edcc0885d6b6f7fda = L.marker(
+                [10.99809, 56.614067],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_f467a3eedbe47c5855e54aaaae53d76e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_077abde20919219edcc0885d6b6f7fda.setIcon(icon_f467a3eedbe47c5855e54aaaae53d76e);
+        
+    
+        var popup_6ed15fd379a7c05a41ff0167775cedac = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_198cdbe3d8a2341fc6d59530ba19a177 = $(`<div id="html_198cdbe3d8a2341fc6d59530ba19a177" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Contour Afrique Est<br>📅 <b>Date :</b> 28 Janvier 1867<br>🌊 <b>Océan/Mer :</b> Océan Indien<br>📜 <b>Événement :</b> Point intermédiaire.<br>↕️ <b>Latitude :</b> 10.99809<br>↔️ <b>Longitude :</b> 56.614067<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> East Africa Coast<br>📅 <b>Date :</b> January 28th, 1867<br>🌊 <b>Ocean/Sea :</b> Indian Ocean<br>📜 <b>Event :</b> Intermediate point.<br>↕️ <b>Latitude :</b> 10.99809<br>↔️ <b>Longitude :</b> 56.614067<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_6ed15fd379a7c05a41ff0167775cedac.setContent(html_198cdbe3d8a2341fc6d59530ba19a177);
+            
+        
+
+        marker_077abde20919219edcc0885d6b6f7fda.bindPopup(popup_6ed15fd379a7c05a41ff0167775cedac)
+        ;
+
+        
+    
+    
+            var marker_b72064da808f62b958eb2e1cfe50c7fe = L.marker(
+                [25.35, 35.7167],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_1745c46a8136079e394be6b0ed1727ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b72064da808f62b958eb2e1cfe50c7fe.setIcon(icon_1745c46a8136079e394be6b0ed1727ea);
+        
+    
+        var popup_518d2bc6bdf1ae993e309253ea1942f7 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e360d776c2a7ca41c4577c032a5b4756 = $(`<div id="html_e360d776c2a7ca41c4577c032a5b4756" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> La mer Rouge<br>📅 <b>Date :</b> 30 Janvier 1867<br>🌊 <b>Océan/Mer :</b> Mer Rouge<br>📜 <b>Événement :</b> Arabian Tunnel - Chasse du dugong.<br>↕️ <b>Latitude :</b> 25.35<br>↔️ <b>Longitude :</b> 35.7167<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,370,999 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> The Red Sea<br>📅 <b>Date :</b> January 30th, 1867<br>🌊 <b>Ocean/Sea :</b> Red Sea<br>📜 <b>Event :</b> Arabian Tunnel - Dugong hunting.<br>↕️ <b>Latitude :</b> 25.35<br>↔️ <b>Longitude :</b> 35.7167<br>🌍🧲 <b>Distance from Earth's center :</b> 6,370,999 meters         </div>     </div>     </div>`)[0];
+                popup_518d2bc6bdf1ae993e309253ea1942f7.setContent(html_e360d776c2a7ca41c4577c032a5b4756);
+            
+        
+
+        marker_b72064da808f62b958eb2e1cfe50c7fe.bindPopup(popup_518d2bc6bdf1ae993e309253ea1942f7)
+        ;
+
+        
+    
+    
+            var marker_c4a4d6a290e7f10c8da8ca0e62ba847a = L.marker(
+                [39.2833, 6.7],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_a3bfc58965f2fbd1ab8b812ba4730ec7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c4a4d6a290e7f10c8da8ca0e62ba847a.setIcon(icon_a3bfc58965f2fbd1ab8b812ba4730ec7);
+        
+    
+        var popup_8d01de899e76b7d87118bdd1f67f9819 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_44091897df5b9c668e33cec6a60d55da = $(`<div id="html_44091897df5b9c668e33cec6a60d55da" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Méditerranée<br>📅 <b>Date :</b> 16 Février 1867<br>🌊 <b>Océan/Mer :</b> Mer Méditerranée<br>📜 <b>Événement :</b> La Méditerranée en quarante-huit heures - Ned Land, à son grand ennui, dut renoncer à ses projets de fuite - Observation des poissons méditerranéens.<br>↕️ <b>Latitude :</b> 39.2833<br>↔️ <b>Longitude :</b> 6.7<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Mediterranean Sea<br>📅 <b>Date :</b> February 16th, 1867<br>🌊 <b>Ocean/Sea :</b> Mediterranean Sea<br>📜 <b>Event :</b> The Mediterranean in forty-eight hours - To his great annoyance, Ned Land had to abandon his escape plans - Observation of Mediterranean fish.<br>↕️ <b>Latitude :</b> 39.2833<br>↔️ <b>Longitude :</b> 6.7<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_8d01de899e76b7d87118bdd1f67f9819.setContent(html_44091897df5b9c668e33cec6a60d55da);
+            
+        
+
+        marker_c4a4d6a290e7f10c8da8ca0e62ba847a.bindPopup(popup_8d01de899e76b7d87118bdd1f67f9819)
+        ;
+
+        
+    
+    
+            var marker_53123bac57cd6f7250ae9abe8903ab9c = L.marker(
+                [32.302988, -24.380986],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_5aa5a1f87098d29c115c8c8d5b8acae0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_53123bac57cd6f7250ae9abe8903ab9c.setIcon(icon_5aa5a1f87098d29c115c8c8d5b8acae0);
+        
+    
+        var popup_f4e116c34fcfa25da5755d15a63fa69f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a37161e921c6b17a5caba1b490cf155e = $(`<div id="html_a37161e921c6b17a5caba1b490cf155e" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Contour Afrique Nord<br>📅 <b>Date :</b> 19 Février 1867<br>🌊 <b>Océan/Mer :</b> Océan Atlantique Nord<br>📜 <b>Événement :</b> Direction le pôle Sud.<br>↕️ <b>Latitude :</b> 32.302988<br>↔️ <b>Longitude :</b> -24.380986<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> North Africa Coast<br>📅 <b>Date :</b> February 19th, 1867<br>🌊 <b>Ocean/Sea :</b> North Atlantic Ocean<br>📜 <b>Event :</b> Heading towards the South Pole.<br>↕️ <b>Latitude :</b> 32.302988<br>↔️ <b>Longitude :</b> -24.380986<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_f4e116c34fcfa25da5755d15a63fa69f.setContent(html_a37161e921c6b17a5caba1b490cf155e);
+            
+        
+
+        marker_53123bac57cd6f7250ae9abe8903ab9c.bindPopup(popup_f4e116c34fcfa25da5755d15a63fa69f)
+        ;
+
+        
+    
+    
+            var marker_5b27681acbb674435e1d91d15bdbd9df = L.marker(
+                [-45.6167, -37.8833],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_9162e2eb269e7a4cfbcf33881c0e4642 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5b27681acbb674435e1d91d15bdbd9df.setIcon(icon_9162e2eb269e7a4cfbcf33881c0e4642);
+        
+    
+        var popup_711457b1dede3d9446e06bba9b43a8e8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_73e30b863fe20e6e058546f7793cd41b = $(`<div id="html_73e30b863fe20e6e058546f7793cd41b" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> La mer de Sargasses<br>📅 <b>Date :</b> 13 Mars 1867<br>🌊 <b>Océan/Mer :</b> Océan Atlantique Sud<br>📜 <b>Événement :</b> L'Atlantide, l'ancienne Métropide de Théopompe, l'Atlantide de Platon.<br>↕️ <b>Latitude :</b> -45.6167<br>↔️ <b>Longitude :</b> -37.8833<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> The Sargasso Sea<br>📅 <b>Date :</b> March 13th, 1867<br>🌊 <b>Ocean/Sea :</b> South Atlantic Ocean<br>📜 <b>Event :</b> Atlantis, the ancient Metropis of Theopompus, the Atlantis of Plato.<br>↕️ <b>Latitude :</b> -45.6167<br>↔️ <b>Longitude :</b> -37.8833<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_711457b1dede3d9446e06bba9b43a8e8.setContent(html_73e30b863fe20e6e058546f7793cd41b);
+            
+        
+
+        marker_5b27681acbb674435e1d91d15bdbd9df.bindPopup(popup_711457b1dede3d9446e06bba9b43a8e8)
+        ;
+
+        
+    
+    
+            var marker_f3655d6bbbed56d1cb3dddf1d0a82ba9 = L.marker(
+                [-50.0, -60.0],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_c39bd2473b0b07197b5075ce02906482 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f3655d6bbbed56d1cb3dddf1d0a82ba9.setIcon(icon_c39bd2473b0b07197b5075ce02906482);
+        
+    
+        var popup_072355571c9bfacddb1e3ba43fc4d5e6 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a74f05cf8ec98bedbc1caa3c5245bd03 = $(`<div id="html_a74f05cf8ec98bedbc1caa3c5245bd03" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Contour Amérique Sud<br>📅 <b>Date :</b> 14 Mars 1867<br>🌊 <b>Océan/Mer :</b> Océan Atlantique Sud<br>📜 <b>Événement :</b> Point intermédiaire<br>↕️ <b>Latitude :</b> -50.0<br>↔️ <b>Longitude :</b> -60.0<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> South America Outline<br>📅 <b>Date :</b> March 14th, 1867<br>🌊 <b>Ocean/Sea :</b> South Atlantic Ocean<br>📜 <b>Event :</b> Intermediate point<br>↕️ <b>Latitude :</b> -50.0<br>↔️ <b>Longitude :</b> -60.0<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_072355571c9bfacddb1e3ba43fc4d5e6.setContent(html_a74f05cf8ec98bedbc1caa3c5245bd03);
+            
+        
+
+        marker_f3655d6bbbed56d1cb3dddf1d0a82ba9.bindPopup(popup_072355571c9bfacddb1e3ba43fc4d5e6)
+        ;
+
+        
+    
+    
+            var marker_9461bada8f0fc0bfcdd6ab272299c2c3 = L.marker(
+                [-53.1, -64.4],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_3ba7b503802b22feda68b23bf2bdf9b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9461bada8f0fc0bfcdd6ab272299c2c3.setIcon(icon_3ba7b503802b22feda68b23bf2bdf9b0);
+        
+    
+        var popup_ed573862aeda32b40c8f1ddd9c556a99 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a6eb75a9730262a6c49f529ce6bc357a = $(`<div id="html_a6eb75a9730262a6c49f529ce6bc357a" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Cap Horn<br>📅 <b>Date :</b> 14 Mars 1867<br>🌊 <b>Océan/Mer :</b> Mers du Pacifique<br>📜 <b>Événement :</b> Direction la Banquise - Le Nautilus avait repris son imperturbable direction vers le sud.<br>↕️ <b>Latitude :</b> -53.1<br>↔️ <b>Longitude :</b> -64.4<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Cape Horn<br>📅 <b>Date :</b> March 14th, 1867<br>🌊 <b>Ocean/Sea :</b> Pacific Seas<br>📜 <b>Event :</b> Heading towards the Ice Pack - The Nautilus had resumed its unwavering course southward.<br>↕️ <b>Latitude :</b> -53.1<br>↔️ <b>Longitude :</b> -64.4<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_ed573862aeda32b40c8f1ddd9c556a99.setContent(html_a6eb75a9730262a6c49f529ce6bc357a);
+            
+        
+
+        marker_9461bada8f0fc0bfcdd6ab272299c2c3.bindPopup(popup_ed573862aeda32b40c8f1ddd9c556a99)
+        ;
+
+        
+    
+    
+            var marker_d0699ff80e212f8787a818d1811db927 = L.marker(
+                [-73.7, -133.8333],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_1fbcbf999b4facfc28ae36773e9412e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d0699ff80e212f8787a818d1811db927.setIcon(icon_1fbcbf999b4facfc28ae36773e9412e3);
+        
+    
+        var popup_ef11c8797a24265e87e0bc3fba34a9cc = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c06a15e1d4397b3af714898407c74d32 = $(`<div id="html_c06a15e1d4397b3af714898407c74d32" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Pôle Sud<br>📅 <b>Date :</b> 19 Mars 1867<br>🌊 <b>Océan/Mer :</b> Mers du Pacifique<br>📜 <b>Événement :</b> Vaisseau enrayé dans la banquise<br>↕️ <b>Latitude :</b> -73.7<br>↔️ <b>Longitude :</b> -133.8333<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> South Pole<br>📅 <b>Date :</b> March 19th, 1867<br>🌊 <b>Ocean/Sea :</b> Pacific Seas<br>📜 <b>Event :</b> Vessel stuck in the ice pack<br>↕️ <b>Latitude :</b> -73.7<br>↔️ <b>Longitude :</b> -133.8333<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_ef11c8797a24265e87e0bc3fba34a9cc.setContent(html_c06a15e1d4397b3af714898407c74d32);
+            
+        
+
+        marker_d0699ff80e212f8787a818d1811db927.bindPopup(popup_ef11c8797a24265e87e0bc3fba34a9cc)
+        ;
+
+        
+    
+    
+            var marker_d27e1202cb18d9657c0ee529ebbc44f0 = L.marker(
+                [-56.05, -67.9],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_73d220aed0685b123eac25fa66acb918 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d27e1202cb18d9657c0ee529ebbc44f0.setIcon(icon_73d220aed0685b123eac25fa66acb918);
+        
+    
+        var popup_d8acad0802f335508d3828ab02b22887 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b8299067148197c707a6ebdf50203506 = $(`<div id="html_b8299067148197c707a6ebdf50203506" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Cap Horn (retour)<br>📅 <b>Date :</b> 1er Avril 1867<br>🌊 <b>Océan/Mer :</b> Océan Pacifique Sud<br>📜 <b>Événement :</b> Du Cap Horn à l'Amazone.<br>↕️ <b>Latitude :</b> -56.05<br>↔️ <b>Longitude :</b> -67.9<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Cape Horn (return)<br>📅 <b>Date :</b> April 1st, 1867<br>🌊 <b>Ocean/Sea :</b> South Pacific Ocean<br>📜 <b>Event :</b> From Cape Horn to the Amazon.<br>↕️ <b>Latitude :</b> -56.05<br>↔️ <b>Longitude :</b> -67.9<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_d8acad0802f335508d3828ab02b22887.setContent(html_b8299067148197c707a6ebdf50203506);
+            
+        
+
+        marker_d27e1202cb18d9657c0ee529ebbc44f0.bindPopup(popup_d8acad0802f335508d3828ab02b22887)
+        ;
+
+        
+    
+    
+            var marker_0ac200e5dadf4bb6ec3e648f08cb2065 = L.marker(
+                [-40.0, -50.0],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_06e88536df60bb0a29492f8a874568a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0ac200e5dadf4bb6ec3e648f08cb2065.setIcon(icon_06e88536df60bb0a29492f8a874568a9);
+        
+    
+        var popup_f61ba68c76c2bca710355a78be5e824f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a1f2416c97a4b470be1fedbacc8aa12e = $(`<div id="html_a1f2416c97a4b470be1fedbacc8aa12e" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Contour Amérique Sud (retour)<br>📅 <b>Date :</b> 5 Avril 1867<br>🌊 <b>Océan/Mer :</b> Océan Atlantique Sud<br>📜 <b>Événement :</b> Point intermédiaire - Patagonie, Uruguay - Le Nautilus maintient sa direction au Nord.<br>↕️ <b>Latitude :</b> -40.0<br>↔️ <b>Longitude :</b> -50.0<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,370,999 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> South America Coastline (return)<br>📅 <b>Date :</b> April 5th, 1867<br>🌊 <b>Ocean/Sea :</b> South Atlantic Ocean<br>📜 <b>Event :</b> Intermediate point - Patagonia, Uruguay - The Nautilus keeps heading north.<br>↕️ <b>Latitude :</b> -40.0<br>↔️ <b>Longitude :</b> -50.0<br>🌍🧲 <b>Distance from Earth's center :</b> 6,370,999 meters         </div>     </div>     </div>`)[0];
+                popup_f61ba68c76c2bca710355a78be5e824f.setContent(html_a1f2416c97a4b470be1fedbacc8aa12e);
+            
+        
+
+        marker_0ac200e5dadf4bb6ec3e648f08cb2065.bindPopup(popup_f61ba68c76c2bca710355a78be5e824f)
+        ;
+
+        
+    
+    
+            var marker_0750aba1d1e31d17631e56a8aea3c6ba = L.marker(
+                [-6.96056, -32.08735],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_8a7800abdc1d48743b465031ecccd010 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0750aba1d1e31d17631e56a8aea3c6ba.setIcon(icon_8a7800abdc1d48743b465031ecccd010);
+        
+    
+        var popup_51c0d80e01c66278d68d9b409ce066bb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b8d3c7d3981a52c1fb7671f0717dfb7a = $(`<div id="html_b8d3c7d3981a52c1fb7671f0717dfb7a" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Contour Amérique Sud centrale<br>📅 <b>Date :</b> 1 Mars 1867<br>🌊 <b>Océan/Mer :</b> Océan Atlantique Sud<br>📜 <b>Événement :</b> Point intermédiaire<br>↕️ <b>Latitude :</b> -6.96056<br>↔️ <b>Longitude :</b> -32.08735<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,370,999 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Central South America Coastline<br>📅 <b>Date :</b> March 1st, 1867<br>🌊 <b>Ocean/Sea :</b> South Atlantic Ocean<br>📜 <b>Event :</b> Intermediate point<br>↕️ <b>Latitude :</b> -6.96056<br>↔️ <b>Longitude :</b> -32.08735<br>🌍🧲 <b>Distance from Earth's center :</b> 6,370,999 meters         </div>     </div>     </div>`)[0];
+                popup_51c0d80e01c66278d68d9b409ce066bb.setContent(html_b8d3c7d3981a52c1fb7671f0717dfb7a);
+            
+        
+
+        marker_0750aba1d1e31d17631e56a8aea3c6ba.bindPopup(popup_51c0d80e01c66278d68d9b409ce066bb)
+        ;
+
+        
+    
+    
+            var marker_c24a00750bb1d813fe61b68227f2760f = L.marker(
+                [15.3167, -59.9667],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_f7f062da45c53cfeb45bef4a18ed5feb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c24a00750bb1d813fe61b68227f2760f.setIcon(icon_f7f062da45c53cfeb45bef4a18ed5feb);
+        
+    
+        var popup_605f9c21eefa0eb6ce65cb0ebae210a3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_982021ddee1820ce4c1bbfe699b6ff9a = $(`<div id="html_982021ddee1820ce4c1bbfe699b6ff9a" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Martinique et Guadeloupe<br>📅 <b>Date :</b> 20 Avril 1867<br>🌊 <b>Océan/Mer :</b> Océan Atlantique Nord<br>📜 <b>Événement :</b> Attaque du calamar géant de dimensions colossales, ayant huit mètres de longueur.<br>↕️ <b>Latitude :</b> 15.3167<br>↔️ <b>Longitude :</b> -59.9667<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Martinique and Guadeloupe<br>📅 <b>Date :</b> April 20th, 1867<br>🌊 <b>Ocean/Sea :</b> North Atlantic Ocean<br>📜 <b>Event :</b> Attack by a colossal giant squid, eight meters long.<br>↕️ <b>Latitude :</b> 15.3167<br>↔️ <b>Longitude :</b> -59.9667<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_605f9c21eefa0eb6ce65cb0ebae210a3.setContent(html_982021ddee1820ce4c1bbfe699b6ff9a);
+            
+        
+
+        marker_c24a00750bb1d813fe61b68227f2760f.bindPopup(popup_605f9c21eefa0eb6ce65cb0ebae210a3)
+        ;
+
+        
+    
+    
+            var marker_01fa075d6c0c86981f98641b8e2429ae = L.marker(
+                [20.0, -70.0],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_c494339e525cd2b1e2c407d5dadc60be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_01fa075d6c0c86981f98641b8e2429ae.setIcon(icon_c494339e525cd2b1e2c407d5dadc60be);
+        
+    
+        var popup_598293c78deec9f50a7dc1865c5bdeb1 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b178b3599155e2bc355f7b76de91a0ed = $(`<div id="html_b178b3599155e2bc355f7b76de91a0ed" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Contour Amérique Nord<br>📅 <b>Date :</b> 18 Avril 1867<br>🌊 <b>Océan/Mer :</b> Océan Atlantique Nord<br>📜 <b>Événement :</b> Point intermédiaire<br>↕️ <b>Latitude :</b> 20.0<br>↔️ <b>Longitude :</b> -70.0<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> North America Contour<br>📅 <b>Date :</b> April 18th, 1867<br>🌊 <b>Ocean/Sea :</b> North Atlantic Ocean<br>📜 <b>Event :</b> Intermediate point<br>↕️ <b>Latitude :</b> 20.0<br>↔️ <b>Longitude :</b> -70.0<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_598293c78deec9f50a7dc1865c5bdeb1.setContent(html_b178b3599155e2bc355f7b76de91a0ed);
+            
+        
+
+        marker_01fa075d6c0c86981f98641b8e2429ae.bindPopup(popup_598293c78deec9f50a7dc1865c5bdeb1)
+        ;
+
+        
+    
+    
+            var marker_32f547d773bbcdaef83de3abf6def7eb = L.marker(
+                [23.6833, -75.3167],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_9750ce407d5894c015d1462cf31f63f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_32f547d773bbcdaef83de3abf6def7eb.setIcon(icon_9750ce407d5894c015d1462cf31f63f9);
+        
+    
+        var popup_10057b4cef4cc471e3ea6f9ee224a642 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c00d57165ee79adbb894b5b8a023dd4f = $(`<div id="html_c00d57165ee79adbb894b5b8a023dd4f" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Île Lucayes<br>📅 <b>Date :</b> 20 Avril 1867<br>🌊 <b>Océan/Mer :</b> Océan Atlantique Nord<br>📜 <b>Événement :</b> Entrée dans le Gulf Stream.<br>↕️ <b>Latitude :</b> 23.6833<br>↔️ <b>Longitude :</b> -75.3167<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Lucayan Island<br>📅 <b>Date :</b> April 20th, 1867<br>🌊 <b>Ocean/Sea :</b> North Atlantic Ocean<br>📜 <b>Event :</b> Entering the Gulf Stream.<br>↕️ <b>Latitude :</b> 23.6833<br>↔️ <b>Longitude :</b> -75.3167<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_10057b4cef4cc471e3ea6f9ee224a642.setContent(html_c00d57165ee79adbb894b5b8a023dd4f);
+            
+        
+
+        marker_32f547d773bbcdaef83de3abf6def7eb.bindPopup(popup_10057b4cef4cc471e3ea6f9ee224a642)
+        ;
+
+        
+    
+    
+            var marker_3aa21bbb4b723fcd738d81ecdf3fec49 = L.marker(
+                [35.1, -74.8667],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_ae4e9fde683eed674e51d0410ee2e2b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3aa21bbb4b723fcd738d81ecdf3fec49.setIcon(icon_ae4e9fde683eed674e51d0410ee2e2b3);
+        
+    
+        var popup_c83efea3225b5d0e114eb69aec9da6e9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9cc28e899775ea3f46e6ba5c50d0b40b = $(`<div id="html_9cc28e899775ea3f46e6ba5c50d0b40b" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Cap Hatteras<br>📅 <b>Date :</b> 8 Mai 1867<br>🌊 <b>Océan/Mer :</b> Océan Atlantique Nord<br>📜 <b>Événement :</b> Travers du Cap Hatteras, à la hauteur de la Caroline du Nord. La largeur du Gulf Stream est là de soixante-quinze milles, et sa profondeur de deux cent dix milles mètres.<br>↕️ <b>Latitude :</b> 35.1<br>↔️ <b>Longitude :</b> -74.8667<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Cape Hatteras<br>📅 <b>Date :</b> May 8th, 1867<br>🌊 <b>Ocean/Sea :</b> North Atlantic Ocean<br>📜 <b>Event :</b> Passing by Cape Hatteras, at the height of North Carolina. The Gulf Stream here is seventy-five miles wide and two hundred and ten miles deep.<br>↕️ <b>Latitude :</b> 35.1<br>↔️ <b>Longitude :</b> -74.8667<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_c83efea3225b5d0e114eb69aec9da6e9.setContent(html_9cc28e899775ea3f46e6ba5c50d0b40b);
+            
+        
+
+        marker_3aa21bbb4b723fcd738d81ecdf3fec49.bindPopup(popup_c83efea3225b5d0e114eb69aec9da6e9)
+        ;
+
+        
+    
+    
+            var marker_0d66c1b18549a1175cc38e17a1b3b484 = L.marker(
+                [41.0833, -72.8667],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_447a02c1fee785628569c652f6d3bdb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0d66c1b18549a1175cc38e17a1b3b484.setIcon(icon_447a02c1fee785628569c652f6d3bdb0);
+        
+    
+        var popup_2d4161cc0e1283b5c4a4a87b9f5bcac0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_aab10abc135909a5f1fc4d08d297ad82 = $(`<div id="html_aab10abc135909a5f1fc4d08d297ad82" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Long Island<br>📅 <b>Date :</b> 10 Mai 1867<br>🌊 <b>Océan/Mer :</b> Océan Atlantique Nord<br>📜 <b>Événement :</b> Lutte des éléments, le capitaine Nemo, par un inexplicable caprice, voulut braver la tempête à la surface.<br>↕️ <b>Latitude :</b> 41.0833<br>↔️ <b>Longitude :</b> -72.8667<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Long Island<br>📅 <b>Date :</b> May 10th, 1867<br>🌊 <b>Ocean/Sea :</b> North Atlantic Ocean<br>📜 <b>Event :</b> Struggle of the elements, Captain Nemo, by an inexplicable whim, wanted to brave the storm on the surface.<br>↕️ <b>Latitude :</b> 41.0833<br>↔️ <b>Longitude :</b> -72.8667<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_2d4161cc0e1283b5c4a4a87b9f5bcac0.setContent(html_aab10abc135909a5f1fc4d08d297ad82);
+            
+        
+
+        marker_0d66c1b18549a1175cc38e17a1b3b484.bindPopup(popup_2d4161cc0e1283b5c4a4a87b9f5bcac0)
+        ;
+
+        
+    
+    
+            var marker_34619a8abda3a9c8912027b5e90198b2 = L.marker(
+                [47.1333, -57.9167],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_7ba681e17e0b18c055ac4edec8192233 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_34619a8abda3a9c8912027b5e90198b2.setIcon(icon_7ba681e17e0b18c055ac4edec8192233);
+        
+    
+        var popup_a4acff02a2e1e1f852548ca574bac435 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f9638c2801402699528e0edf6d3566d7 = $(`<div id="html_f9638c2801402699528e0edf6d3566d7" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Terre Neuve<br>📅 <b>Date :</b> 15 Mai 1867<br>🌊 <b>Océan/Mer :</b> Océan Atlantique Nord<br>📜 <b>Événement :</b> Extrémité méridionale du banc de Terre Neuve - Professeur Aronnax consigne dans son journal les différentes espèces marines.<br>↕️ <b>Latitude :</b> 47.1333<br>↔️ <b>Longitude :</b> -57.9167<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Newfoundland<br>📅 <b>Date :</b> May 15th, 1867<br>🌊 <b>Ocean/Sea :</b> North Atlantic Ocean<br>📜 <b>Event :</b> Southern tip of the Newfoundland bank - Professor Aronnax records in his journal the various marine species.<br>↕️ <b>Latitude :</b> 47.1333<br>↔️ <b>Longitude :</b> -57.9167<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_a4acff02a2e1e1f852548ca574bac435.setContent(html_f9638c2801402699528e0edf6d3566d7);
+            
+        
+
+        marker_34619a8abda3a9c8912027b5e90198b2.bindPopup(popup_a4acff02a2e1e1f852548ca574bac435)
+        ;
+
+        
+    
+    
+            var marker_1c10e4370568f99a95c9d77aa5e8bb26 = L.marker(
+                [51.1, -9.7],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_a3eeb09d82c694075d5586496ad8d1d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1c10e4370568f99a95c9d77aa5e8bb26.setIcon(icon_a3eeb09d82c694075d5586496ad8d1d6);
+        
+    
+        var popup_2a169f02b7fe46ed8e989230834e03b6 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_de4d8d85551779894d5932766bd3a6a9 = $(`<div id="html_de4d8d85551779894d5932766bd3a6a9" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Irlande<br>📅 <b>Date :</b> 25 Mai 1867<br>🌊 <b>Océan/Mer :</b> Mer Celtique<br>📜 <b>Événement :</b> La vengeance du capitaine Nemo, le vengeur, et cette horrible scène du vaisseau coulé avec son équipage.<br>↕️ <b>Latitude :</b> 51.1<br>↔️ <b>Longitude :</b> -9.7<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Ireland<br>📅 <b>Date :</b> May 25th, 1867<br>🌊 <b>Ocean/Sea :</b> Celtic Sea<br>📜 <b>Event :</b> The vengeance of Captain Nemo, the avenger, and that horrible scene of the sunken ship with its crew.<br>↕️ <b>Latitude :</b> 51.1<br>↔️ <b>Longitude :</b> -9.7<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_2a169f02b7fe46ed8e989230834e03b6.setContent(html_de4d8d85551779894d5932766bd3a6a9);
+            
+        
+
+        marker_1c10e4370568f99a95c9d77aa5e8bb26.bindPopup(popup_2a169f02b7fe46ed8e989230834e03b6)
+        ;
+
+        
+    
+    
+            var marker_094157415d02fc426f5a1f7fc61c8df3 = L.marker(
+                [50.0, -2.2],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_4241e1ef2ac68e53a3cf6aac6ffd18cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_094157415d02fc426f5a1f7fc61c8df3.setIcon(icon_4241e1ef2ac68e53a3cf6aac6ffd18cb);
+        
+    
+        var popup_19cee5bef9e3704a2ca528cdee56c3aa = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_fd0176c4d33d608e19a0940c7747bde1 = $(`<div id="html_fd0176c4d33d608e19a0940c7747bde1" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Manche<br>📅 <b>Date :</b> 2 Juin 1867<br>🌊 <b>Océan/Mer :</b> Manche<br>📜 <b>Événement :</b> Complot d'évasion<br>↕️ <b>Latitude :</b> 50.0<br>↔️ <b>Longitude :</b> -2.2<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> English Channel<br>📅 <b>Date :</b> June 2nd, 1867<br>🌊 <b>Ocean/Sea :</b> English Channel<br>📜 <b>Event :</b> Escape plot<br>↕️ <b>Latitude :</b> 50.0<br>↔️ <b>Longitude :</b> -2.2<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_19cee5bef9e3704a2ca528cdee56c3aa.setContent(html_fd0176c4d33d608e19a0940c7747bde1);
+            
+        
+
+        marker_094157415d02fc426f5a1f7fc61c8df3.bindPopup(popup_19cee5bef9e3704a2ca528cdee56c3aa)
+        ;
+
+        
+    
+    
+            var marker_de1157b7ac8e798d2a496f33e2850ebf = L.marker(
+                [50.9578, 1.382884],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_6f88eeafea85c55889514857e3830c57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_de1157b7ac8e798d2a496f33e2850ebf.setIcon(icon_6f88eeafea85c55889514857e3830c57);
+        
+    
+        var popup_ee0d677f5c06ac2db42a8dbb44b5dabd = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0fd2eeab7cb2dfa4713aa44d9f0eacff = $(`<div id="html_0fd2eeab7cb2dfa4713aa44d9f0eacff" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Contour Angleterre Sud<br>📅 <b>Date :</b> 3 Juin 1867<br>🌊 <b>Océan/Mer :</b> Mer du Nord<br>📜 <b>Événement :</b> Complot d'évasion<br>↕️ <b>Latitude :</b> 50.9578<br>↔️ <b>Longitude :</b> 1.382884<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> South of England Coast<br>📅 <b>Date :</b> June 3rd, 1867<br>🌊 <b>Ocean/Sea :</b> North Sea<br>📜 <b>Event :</b> Escape plot<br>↕️ <b>Latitude :</b> 50.9578<br>↔️ <b>Longitude :</b> 1.382884<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_ee0d677f5c06ac2db42a8dbb44b5dabd.setContent(html_0fd2eeab7cb2dfa4713aa44d9f0eacff);
+            
+        
+
+        marker_de1157b7ac8e798d2a496f33e2850ebf.bindPopup(popup_ee0d677f5c06ac2db42a8dbb44b5dabd)
+        ;
+
+        
+    
+    
+            var marker_baee320e0f02da253ee163b5dfe105c5 = L.marker(
+                [55.59412, 4.136887],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_23b0a50d6e816b53e37711a6ff6b1bca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_baee320e0f02da253ee163b5dfe105c5.setIcon(icon_23b0a50d6e816b53e37711a6ff6b1bca);
+        
+    
+        var popup_ece70cb403736f3a2627eb3680c6357e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_abfff64386d1633a5846c8fe5626337f = $(`<div id="html_abfff64386d1633a5846c8fe5626337f" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Contour Angleterre Nord<br>📅 <b>Date :</b> 3 Juin 1867<br>🌊 <b>Océan/Mer :</b> Mer du Nord<br>📜 <b>Événement :</b> Complot d'évasion<br>↕️ <b>Latitude :</b> 55.59412<br>↔️ <b>Longitude :</b> 4.136887<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> North of England Coast<br>📅 <b>Date :</b> June 3rd, 1867<br>🌊 <b>Ocean/Sea :</b> North Sea<br>📜 <b>Event :</b> Escape plot<br>↕️ <b>Latitude :</b> 55.59412<br>↔️ <b>Longitude :</b> 4.136887<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_ece70cb403736f3a2627eb3680c6357e.setContent(html_abfff64386d1633a5846c8fe5626337f);
+            
+        
+
+        marker_baee320e0f02da253ee163b5dfe105c5.bindPopup(popup_ece70cb403736f3a2627eb3680c6357e)
+        ;
+
+        
+    
+    
+            var marker_930cb38b2b5e9f8f665b9d132be7697c = L.marker(
+                [62.86093, 1.2103],
+                {
+}
+            ).addTo(marker_cluster_389f0ed90fc9eb29308bd82e8df63552);
+        
+    
+            var icon_0e422db17b6da4d1dac1c66215d2333c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_930cb38b2b5e9f8f665b9d132be7697c.setIcon(icon_0e422db17b6da4d1dac1c66215d2333c);
+        
+    
+        var popup_12b65d31f28bb25c4477896aeb9121b4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b5e6937984560544a852e4f7b4c9533a = $(`<div id="html_b5e6937984560544a852e4f7b4c9533a" style="width: 100.0%; height: 100.0%;">     <div style="display: flex; gap: 20px;">         <div style="flex: 1; border-right: 1px solid #ccc; padding-right: 10px;">             <h4>Français 🇫🇷</h4>             🗺️🧭<b>Escales du Nautilus :</b> Côtes de la Norvège<br>📅 <b>Date :</b> Juin 1867<br>🌊 <b>Océan/Mer :</b> Mer du Nord<br>📜 <b>Événement :</b> Fin du voyage pour le professeur Aronnax, Conseil et Ned Land<br>↕️ <b>Latitude :</b> 62.86093<br>↔️ <b>Longitude :</b> 1.2103<br>🌍🧲 <b>Distance du centre de la Terre :</b> 6,371,000 mètres         </div>         <div style="flex: 1; padding-left: 10px;">             <h4>English 🇬🇧</h4>             🗺️🧭<b>Nautilus Stops :</b> Coast of Norway<br>📅 <b>Date :</b> June 1867<br>🌊 <b>Ocean/Sea :</b> North Sea<br>📜 <b>Event :</b> End of the journey for Professor Aronnax, Conseil, and Ned Land<br>↕️ <b>Latitude :</b> 62.86093<br>↔️ <b>Longitude :</b> 1.2103<br>🌍🧲 <b>Distance from Earth's center :</b> 6,371,000 meters         </div>     </div>     </div>`)[0];
+                popup_12b65d31f28bb25c4477896aeb9121b4.setContent(html_b5e6937984560544a852e4f7b4c9533a);
+            
+        
+
+        marker_930cb38b2b5e9f8f665b9d132be7697c.bindPopup(popup_12b65d31f28bb25c4477896aeb9121b4)
+        ;
+
+        
+    
+    
+            marker_cluster_389f0ed90fc9eb29308bd82e8df63552.addTo(map_f272f17571136208cb7b14f9facad6f4);
+        
+    
+            var poly_line_fbd0aec99bd6df688361e590809249c0 = L.polyline(
+                [[33.18497, 169.85446], [9.48786, 177.83569], [-16.0667, 164.5333], [-0.3167, 128.3833], [-10.7, 136.7667], [-8.6833, 125.7333], [-12.0833, 94.55], [5.9167, 79.7], [10.99809, 56.614067], [25.35, 35.7167], [39.2833, 6.7], [32.302988, -24.380986], [-45.6167, -37.8833], [-50.0, -60.0], [-53.1, -64.4], [-73.7, -133.8333], [-56.05, -67.9], [-40.0, -50.0], [-6.96056, -32.08735], [15.3167, -59.9667], [20.0, -70.0], [23.6833, -75.3167], [35.1, -74.8667], [41.0833, -72.8667], [47.1333, -57.9167], [51.1, -9.7], [50.0, -2.2], [50.9578, 1.382884], [55.59412, 4.136887], [62.86093, 1.2103]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f272f17571136208cb7b14f9facad6f4);
+        
+    
+            var marker_5a6be5c0f353f7895c92cfe7ad2f6a70 = L.marker(
+                [33.18497, 169.85446],
+                {
+}
+            ).addTo(map_f272f17571136208cb7b14f9facad6f4);
+        
+    
+            var div_icon_af0117acc60b5c73a4a377b0e6c748b9 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size: 12px; color: green; font-weight: bold;\u0027\u003eD\u00e9but / Start\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+            marker_5a6be5c0f353f7895c92cfe7ad2f6a70.setIcon(div_icon_af0117acc60b5c73a4a377b0e6c748b9);
+        
+    
+        var popup_fe7f3148bf95c7993143bbe8ca82e5f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9900b5aad3d343d039b7afb8899662a1 = $(`<div id="html_9900b5aad3d343d039b7afb8899662a1" style="width: 100.0%; height: 100.0%;"><div><b>Début du voyage / Start of the journey</b></div></div>`)[0];
+                popup_fe7f3148bf95c7993143bbe8ca82e5f2.setContent(html_9900b5aad3d343d039b7afb8899662a1);
+            
+        
+
+        marker_5a6be5c0f353f7895c92cfe7ad2f6a70.bindPopup(popup_fe7f3148bf95c7993143bbe8ca82e5f2)
+        ;
+
+        
+    
+    
+            var marker_d5b81af7ccfc0464985e9131daecef16 = L.marker(
+                [62.86093, 1.2103],
+                {
+}
+            ).addTo(map_f272f17571136208cb7b14f9facad6f4);
+        
+    
+            var div_icon_afef086a39da3406db8c2070ee43b637 = L.divIcon({
+  "html": "\u003cdiv style=\u0027font-size: 12px; color: red; font-weight: bold;\u0027\u003eFin / End\u003c/div\u003e",
+  "iconSize": [30, 30],
+  "iconAnchor": [15, 15],
+  "className": "empty",
+});
+            marker_d5b81af7ccfc0464985e9131daecef16.setIcon(div_icon_afef086a39da3406db8c2070ee43b637);
+        
+    
+        var popup_9d59a20b1e8bd8ed0132b90d3ecb60f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_549f5a5e6a82e26059d1b09103ecfa75 = $(`<div id="html_549f5a5e6a82e26059d1b09103ecfa75" style="width: 100.0%; height: 100.0%;"><div><b>Fin du voyage / End of the journey</b></div></div>`)[0];
+                popup_9d59a20b1e8bd8ed0132b90d3ecb60f9.setContent(html_549f5a5e6a82e26059d1b09103ecfa75);
+            
+        
+
+        marker_d5b81af7ccfc0464985e9131daecef16.bindPopup(popup_9d59a20b1e8bd8ed0132b90d3ecb60f9)
+        ;
+
+        
+    
+</script>
+</html>
