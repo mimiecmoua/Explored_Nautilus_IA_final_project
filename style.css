@@ -246,6 +246,7 @@ button:hover #clip {
   a:hover {
   color: #00ffff;
   text-shadow: 0 0 5px #00ffff;
+  transition: all 0.3s ease-in-out;
 }
 
   
