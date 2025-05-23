@@ -12,7 +12,7 @@ Chaque escale est représentée par un marqueur interactif, et le trajet du Naut
 
 ➡️ Objectif : allier narration littéraire et visualisation géospatiale à travers une IA légère mais évocatrice.
 
-# The nautilus Exploration
+# The nautilus Exploration 🦑
 
 « Une carte interactive immersive inspirée de Jules Verne, propulsée par de l’IA et du web moderne. »
 
@@ -20,7 +20,7 @@ Chaque escale est représentée par un marqueur interactif, et le trajet du Naut
 
 ## 🚀 Présentation
 
-J’ai réalisé ce projet car, étant une femme très organisée, j’ai visualisé le trajet du Nautilus comme une carte mentale. Cette intuition m’a menée à relever les données géographiques extraites du livre Vingt mille lieues sous les mers de Jules Verne, puis à les structurer.
+J’ai réalisé ce projet car, étant une femme très organisée, j’ai visualisé le trajet du Nautilus comme une carte mentale. Cette intuition m’a menée à relever les données géographiques extraites du livre Vingt mille lieues sous les mers 🦑 de Jules Verne, puis à les structurer.
 
 À l’aide de JupyterLab et de frameworks comme Folium, j’ai conçu une application qui calcule et affiche les coordonnées géographiques des escales du Nautilus. Le tout est enrichi par une IA embarquée qui génère des fenêtres d'information bilingues et trace le parcours complet du sous-marin sur une carte interactive.
 
