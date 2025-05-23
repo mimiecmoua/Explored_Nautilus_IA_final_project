@@ -243,6 +243,11 @@ button:hover #clip {
   .site-footer a:hover {
     color: #2efadf;
   }
+  a:hover {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+}
+
   
   @media (max-width: 480px) {
     .site-footer p {
