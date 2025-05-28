@@ -1,0 +1,602 @@
+[
+    {
+      "Escales du Nautilus": {
+        "fr": "Île de Crespo",
+        "en": "Crespo Island"
+      },
+      "Date": {
+        "fr": "1er Décembre 1866",
+        "en": "December 1st, 1866"
+      } ,
+      "Latitude_Décimal": 33.18497,
+      "Longitude_Décimal": 169.85446,
+      "Océan/Mer": {
+        "fr": "Océan Pacifique Sud",
+        "en": "South Pacific Ocean"
+      },
+      "Event":  {
+        "fr": "Début de l'aventure - Première chasse sous-marine - Une forêt sous-marine - Une monstrueuse araignée de mer.",
+        "en": "Beginning of the adventure - First underwater hunt - A submarine forest - A monstrous sea spider."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Archipel des Pomotou",
+        "en": "Pomotou Archipelago"
+      },
+      "Date": {
+        "fr": "11 Décembre 1866",
+        "en": "December 11th, 1866"
+      },
+      "Latitude_Décimal": 9.48786,
+      "Longitude_Décimal": 177.83569,
+      "Océan/Mer": {
+        "fr": "Océan Pacifique Sud",
+        "en": "South Pacific Ocean"
+      },
+      "Event": {
+        "fr": "Cette archipel couvre une superficie de trois cent soixante-dix lieues carrées, dont une soixantaine de groupes d'îles.",
+        "en": "This archipelago covers an area of three hundred seventy square leagues, including about sixty island groups."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Archipel des nouvelles Hébrides",
+        "en": "New Hebrides Archipelago"
+      },
+      "Date": {
+        "fr": "25 Décembre 1866",
+        "en": "December 25th, 1866"
+      },
+      "Latitude_Décimal": -16.0667,
+      "Longitude_Décimal": 164.5333,
+      "Océan/Mer": {
+        "fr": "Océan Pacifique Sud",
+        "en": "South Pacific Ocean"
+      },
+      "Event": {
+        "fr": "Découverte par Quiros en 1606, que Bougainville explora en 1768, et auquel Cook donna son nom actuel en 1773.",
+        "en": "Discovered by Quiros in 1606, explored by Bougainville in 1768, and named by Cook in 1773."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "La Pouasie",
+        "en": "Papua"
+      },
+      "Date": {
+        "fr": "4 Janvier 1867",
+        "en": "January 4th, 1867"
+      },
+      "Latitude_Décimal": -0.3167,
+      "Longitude_Décimal": 128.3833,
+      "Océan/Mer": {
+        "fr": "Océan Pacifique Sud",
+        "en": "South Pacific Ocean"
+      },
+      "Event": {
+        "fr": "Découverte en 1511 par le Portugais Francisco Serrano - Vue sur les sommets des monts Arfak - Quatre jours sur terre - Bataille avec les Papouas.",
+        "en": "Discovered in 1511 by the Portuguese Francisco Serrano - View of the Arfak Mountains - Four days on land - Battle with the Papuans."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Cap Wessel",
+        "en": "Cape Wessel"
+      },
+      "Date": {
+        "fr": "11 janvier 1867",
+        "en": "January 11th, 1867"
+      },
+      "Latitude_Décimal": -10.7,
+      "Longitude_Décimal": 136.7667,
+      "Océan/Mer": {
+        "fr": "Océan Pacifique Sud",
+        "en": "South Pacific Ocean"
+      },
+      "Event": {
+        "fr": "Forme la pointe du golfe de Carpentarie.",
+        "en": "Forms the tip of the Gulf of Carpentaria."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Mer de Timor",
+        "en": "Timor Sea"
+      },
+      "Date": {
+        "fr": "13 janvier 1867",
+        "en": "January 13th, 1867"
+      },
+      "Latitude_Décimal": -8.6833,
+      "Longitude_Décimal": 125.7333,
+      "Océan/Mer": {
+        "fr": "Océan Indien",
+        "en": "Indian Ocean"
+      },
+      "Event": {
+        "fr": "Un homme de l'équipage mort dans la nuit est enterré dans le cimetière sous-marin. Le capitaine Nemo et les siens venaient enterrer leur compagnon dans cette demeure commune, au fond de cet inaccessible océan.",
+        "en": "A crew member who died during the night was buried in the underwater cemetery. Captain Nemo and his men came to lay their companion to rest in this common grave, at the bottom of this unreachable ocean."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Île Keeling",
+        "en": "Keeling Island"
+      },
+      "Date": {
+        "fr": "24 Janvier 1867",
+        "en": "January 24th, 1867"
+      },
+      "Latitude_Décimal": -12.0833,
+      "Longitude_Décimal": 94.55,
+      "Océan/Mer": {
+        "fr": "Océan Indien",
+        "en": "Indian Ocean"
+      },
+      "Event": {
+        "fr": "Visitée par Darwin et le capitaine Fitz-Roy.",
+        "en": "Visited by Darwin and Captain Fitz-Roy."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Golfe du Bengale",
+        "en": "Bay of Bengal"
+      },
+      "Date": {
+        "fr": "27 janvier 1867",
+        "en": "January 27th, 1867"
+      },
+      "Latitude_Décimal": 5.9167,
+      "Longitude_Décimal": 79.7,
+      "Océan/Mer": {
+        "fr": "Océan Indien",
+        "en": "Indian Ocean"
+      },
+      "Event": {
+        "fr": "Spectacle sinistre ! Des cadavres flottaient à la surface des flots. C'était la mort des villes indiennes.",
+        "en": "A grim spectacle! Corps were floating on the surface of the waves. It was the death of the Indian cities."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Contour Afrique Est",
+        "en": "East Africa Coast"
+      },
+      "Date": {
+        "fr": "28 Janvier 1867",
+        "en": "January 28th, 1867"
+      },
+      "Latitude_Décimal": 10.998090,
+      "Longitude_Décimal": 56.614067,
+      "Océan/Mer": {
+        "fr": "Océan Indien",
+        "en": "Indian Ocean"
+      },
+      "Event": {
+        "fr": "Point intermédiaire.",
+        "en": "Intermediate point."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "La mer Rouge",
+        "en": "The Red Sea"
+      },
+      "Date": {
+        "fr": "30 Janvier 1867",
+        "en": "January 30th, 1867"
+      },
+      "Latitude_Décimal": 25.35,
+      "Longitude_Décimal": 35.7167,
+      "Océan/Mer": {
+        "fr": "Mer Rouge",
+        "en": "Red Sea"
+      },
+      "Event": {
+        "fr": "Arabian Tunnel - Chasse du dugong.",
+        "en": "Arabian Tunnel - Dugong hunting."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Méditerranée",
+        "en": "Mediterranean Sea"
+      },
+      "Date": {
+        "fr": "16 Février 1867",
+        "en": "February 16th, 1867"
+      },
+      "Latitude_Décimal": 39.2833,
+      "Longitude_Décimal": 6.7,
+      "Océan/Mer": {
+        "fr": "Mer Méditerranée",
+        "en": "Mediterranean Sea"
+      },
+      "Event": {
+        "fr": "La Méditerranée en quarante-huit heures - Ned Land, à son grand ennui, dut renoncer à ses projets de fuite - Observation des poissons méditerranéens.",
+        "en": "The Mediterranean in forty-eight hours - To his great annoyance, Ned Land had to abandon his escape plans - Observation of Mediterranean fish."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Contour Afrique Nord",
+        "en": "North Africa Coast"
+      },
+      "Date": {
+        "fr": "19 Février 1867",
+        "en": "February 19th, 1867"
+      },
+      "Latitude_Décimal": 32.302988,
+      "Longitude_Décimal": -24.380986,
+      "Océan/Mer": {
+        "fr": "Océan Atlantique Nord",
+        "en": "North Atlantic Ocean"
+      },
+      "Event": {
+        "fr": "Direction le pôle Sud.",
+        "en": "Heading towards the South Pole."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "La mer de Sargasses",
+        "en": "The Sargasso Sea"
+      },
+      "Date": {
+        "fr": "13 Mars 1867",
+        "en": "March 13th, 1867"
+      },
+      "Latitude_Décimal": -45.6167,
+      "Longitude_Décimal": -37.8833,
+      "Océan/Mer": {
+        "fr": "Océan Atlantique Sud",
+        "en": "South Atlantic Ocean"
+      },
+      "Event": {
+        "fr": "L'Atlantide, l'ancienne Métropide de Théopompe, l'Atlantide de Platon.",
+        "en": "Atlantis, the ancient Metropis of Theopompus, the Atlantis of Plato."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Contour Amérique Sud",
+        "en": "South America Outline"
+      },
+      "Date": {
+        "fr": "14 Mars 1867",
+        "en": "March 14th, 1867"
+      },
+      "Latitude_Décimal": -54.8,
+      "Longitude_Décimal": -50.4,
+      "Océan/Mer": {
+        "fr": "Océan Atlantique Sud",
+        "en": "South Atlantic Ocean"
+      },
+      "Event": {
+        "fr": "Point intermédiaire",
+        "en": "Intermediate point"
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Cap Horn",
+        "en": "Cape Horn"
+      },
+      "Date": {
+        "fr": "14 Mars 1867",
+        "en": "March 14th, 1867"
+      },
+      "Latitude_Décimal": -61.6,
+      "Longitude_Décimal": -64.8,
+      "Océan/Mer": {
+        "fr": "Mers du Pacifique",
+        "en": "Pacific Seas"
+      },
+      "Event": {
+        "fr": "Direction la Banquise - Le Nautilus avait repris son imperturbable direction vers le sud.",
+        "en": "Heading towards the Ice Pack - The Nautilus had resumed its unwavering course southward."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Pôle Sud",
+        "en": "South Pole"
+      },
+      "Date": {
+        "fr": "19 Mars 1867",
+        "en": "March 19th, 1867"
+      },
+      "Latitude_Décimal": -73.7,
+      "Longitude_Décimal": -133.8333,
+      "Océan/Mer": {
+        "fr": "Mers du Pacifique",
+        "en": "Pacific Seas"
+      },
+      "Event": {
+        "fr": "Vaisseau enrayé dans la banquise",
+        "en": "Vessel stuck in the ice pack"
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Cap Horn (retour)",
+        "en": "Cape Horn (return)"
+      },
+      "Date": {
+        "fr": "1er Avril 1867",
+        "en": "April 1st, 1867"
+      },
+      "Latitude_Décimal": -56.05,
+      "Longitude_Décimal": -67.9,
+      "Océan/Mer": {
+        "fr": "Océan Pacifique Sud",
+        "en": "South Pacific Ocean"
+      },
+      "Event": {
+        "fr": "Du Cap Horn à l'Amazone.",
+        "en": "From Cape Horn to the Amazon."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Contour Amérique Sud (retour)",
+        "en": "South America Coastline (return)"
+      },
+      "Date": {
+        "fr": "5 Avril 1867",
+        "en": "April 5th, 1867"
+      },
+      "Latitude_Décimal": -40.0,
+      "Longitude_Décimal": -50.0,
+      "Océan/Mer": {
+        "fr": "Océan Atlantique Sud",
+        "en": "South Atlantic Ocean"
+      },
+      "Event": {
+        "fr": "Point intermédiaire - Patagonie, Uruguay - Le Nautilus maintient sa direction au Nord.",
+        "en": "Intermediate point - Patagonia, Uruguay - The Nautilus keeps heading north."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Contour Amérique Sud centrale",
+        "en": "Central South America Coastline"
+      },
+      "Date": {
+        "fr": "10 Avril 1867",
+        "en": "March 1st, 1867"
+      },
+      "Latitude_Décimal": -6.96056,
+      "Longitude_Décimal": -32.08735,
+      "Océan/Mer": {
+        "fr": "Océan Atlantique Sud",
+        "en": "South Atlantic Ocean"
+      },
+      "Event": {
+        "fr": "Point intermédiaire",
+        "en": "Intermediate point"
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Martinique et Guadeloupe",
+        "en": "Martinique and Guadeloupe"
+      },
+      "Date": {
+        "fr": "18 Avril 1867",
+        "en": "April 20th, 1867"
+      },
+      "Latitude_Décimal": 15.3167,
+      "Longitude_Décimal": -59.9667,
+      "Océan/Mer": {
+        "fr": "Océan Atlantique Nord",
+        "en": "North Atlantic Ocean"
+      },
+      "Event": {
+        "fr": "Attaque du calamar géant de dimensions colossales, ayant huit mètres de longueur.",
+        "en": "Attack by a colossal giant squid, eight meters long."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Contour Amérique Nord",
+        "en": "North America Contour"
+      },
+      "Date": {
+        "fr": "20 Avril 1867",
+        "en": "April 18th, 1867"
+      },
+      "Latitude_Décimal": 20.0,
+      "Longitude_Décimal": -70.0,
+      "Océan/Mer": {
+        "fr": "Océan Atlantique Nord",
+        "en": "North Atlantic Ocean"
+      },
+      "Event": {
+        "fr": "Point intermédiaire",
+        "en": "Intermediate point"
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Île Lucayes",
+        "en": "Lucayan Island"
+      },
+      "Date": {
+        "fr": "20 Avril 1867",
+        "en": "April 20th, 1867"
+      },
+      "Latitude_Décimal": 23.6833,
+      "Longitude_Décimal": -75.3167,
+      "Océan/Mer": {
+        "fr": "Océan Atlantique Nord",
+        "en": "North Atlantic Ocean"
+      },
+      "Event": {
+        "fr": "Entrée dans le Gulf Stream.",
+        "en": "Entering the Gulf Stream."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Cap Hatteras",
+        "en": "Cape Hatteras"
+      },
+      "Date": {
+        "fr": "8 Mai 1867",
+        "en": "May 8th, 1867"
+      },
+      "Latitude_Décimal": 35.1,
+      "Longitude_Décimal": -74.8667,
+      "Océan/Mer": {
+        "fr": "Océan Atlantique Nord",
+        "en": "North Atlantic Ocean"
+      },
+      "Event": {
+        "fr": "Travers du Cap Hatteras, à la hauteur de la Caroline du Nord. La largeur du Gulf Stream est là de soixante-quinze milles, et sa profondeur de deux cent dix milles mètres.",
+        "en": "Passing by Cape Hatteras, at the height of North Carolina. The Gulf Stream here is seventy-five miles wide and two hundred and ten miles deep."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Long Island",
+        "en": "Long Island"
+      },
+      "Date": {
+        "fr": "10 Mai 1867",
+        "en": "May 10th, 1867"
+      },
+      "Latitude_Décimal": 41.0833,
+      "Longitude_Décimal": -72.8667,
+      "Océan/Mer": {
+        "fr": "Océan Atlantique Nord",
+        "en": "North Atlantic Ocean"
+      },
+      "Event": {
+        "fr": "Lutte des éléments, le capitaine Nemo, par un inexplicable caprice, voulut braver la tempête à la surface.",
+        "en": "Struggle of the elements, Captain Nemo, by an inexplicable whim, wanted to brave the storm on the surface."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Terre Neuve",
+        "en": "Newfoundland"
+      },
+      "Date": {
+        "fr": "15 Mai 1867",
+        "en": "May 15th, 1867"
+      },
+      "Latitude_Décimal": 47.1333,
+      "Longitude_Décimal": -57.9167,
+      "Océan/Mer": {
+        "fr": "Océan Atlantique Nord",
+        "en": "North Atlantic Ocean"
+      },
+      "Event": {
+        "fr": "Extrémité méridionale du banc de Terre Neuve - Professeur Aronnax consigne dans son journal les différentes espèces marines.",
+        "en": "Southern tip of the Newfoundland bank - Professor Aronnax records in his journal the various marine species."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Irlande",
+        "en": "Ireland"
+      },
+      "Date": {
+        "fr": "25 Mai 1867",
+        "en": "May 25th, 1867"
+      },
+      "Latitude_Décimal": 51.1,
+      "Longitude_Décimal": -9.7,
+      "Océan/Mer": {
+        "fr": "Mer Celtique",
+        "en": "Celtic Sea"
+      },
+      "Event": {
+        "fr": "La vengeance du capitaine Nemo, le vengeur, et cette horrible scène du vaisseau coulé avec son équipage.",
+        "en": "The vengeance of Captain Nemo, the avenger, and that horrible scene of the sunken ship with its crew."
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Manche",
+        "en": "English Channel"
+      },
+      "Date": {
+        "fr": "2 Juin 1867",
+        "en": "June 2nd, 1867"
+      },
+      "Latitude_Décimal": 50.0,
+      "Longitude_Décimal": -2.2,
+      "Océan/Mer": {
+        "fr": "Manche",
+        "en": "English Channel"
+      },
+      "Event": {
+        "fr": "Complot d'évasion",
+        "en": "Escape plot"
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Contour Angleterre Sud",
+        "en": "South of England Coast"
+      },
+      "Date": {
+        "fr": "3 Juin 1867",
+        "en": "June 3rd, 1867"
+      },
+      "Latitude_Décimal": 50.95780,
+      "Longitude_Décimal": 1.382884,
+      "Océan/Mer": {
+        "fr": "Mer du Nord",
+        "en": "North Sea"
+      },
+      "Event": {
+        "fr": "Complot d'évasion",
+        "en": "Escape plot"
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Contour Angleterre Nord",
+        "en": "North of England Coast"
+      },
+      "Date": {
+        "fr": "3 Juin 1867",
+        "en": "June 3rd, 1867"
+      },
+      "Latitude_Décimal": 55.59412,
+      "Longitude_Décimal": 4.136887,
+      "Océan/Mer": {
+        "fr": "Mer du Nord",
+        "en": "North Sea"
+      },
+      "Event": {
+        "fr": "Complot d'évasion",
+        "en": "Escape plot"
+      }
+    },
+    {
+      "Escales du Nautilus": {
+        "fr": "Côtes de la Norvège",
+        "en": "Coast of Norway"
+      },
+      "Date": {
+        "fr": "Juin 1867",
+        "en": "June 1867"
+      },
+      "Latitude_Décimal": 62.86093,
+      "Longitude_Décimal": 1.21030,
+      "Océan/Mer": {
+        "fr": "Mer du Nord",
+        "en": "North Sea"
+      },
+      "Event": {
+        "fr": "Fin du voyage pour le professeur Aronnax, Conseil et Ned Land",
+        "en": "End of the journey for Professor Aronnax, Conseil, and Ned Land"
+      }
+    }    
+  ]

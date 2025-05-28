@@ -202,7 +202,7 @@ button:hover #clip {
 }
 
 /* === RESPONSIVE === */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: px) {
   .hud-layout {
     flex-direction: column;
   }
@@ -250,13 +250,18 @@ button:hover #clip {
 }
 
   
-  @media (max-width: 480px) {
-    .site-footer p {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
+  @media (max-width: 375px) {
+  .site-footer {
+    padding: 10px 5px;     /* moins de padding pour réduire la hauteur */
+    font-size: 0.7rem;     /* texte un peu plus petit */
   }
+
+  .site-footer p {
+    gap: 4px;              /* espace réduit entre lignes */
+  }
+  
+  
+}
   
   
   
