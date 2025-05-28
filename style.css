@@ -13,7 +13,7 @@ h1 {
     text-align: center;
     color: #27c39f; /* Turquoise lumineux façon Nautilus */
     font-size: clamp(2rem, 5vw, 4rem); /* Responsive entre 2rem et 4rem */
-    margin: 40px 20px 20px;
+    margin: 40px 10px 10px;
     font-family: 'Michroma', sans-serif; /* Style "journal de bord" */
     text-shadow: 0 0 8px #195480; /* Effet lumière douce */
     z-index: 100;
@@ -28,7 +28,7 @@ h1 {
   align-items: center;
   gap: 40px;
   flex-wrap: wrap;
-  padding: 60px 20px;
+  padding: 30px 20px;
 }
 
 /* === IMAGE DU HUD === */
@@ -208,7 +208,7 @@ button:hover #clip {
   }
 
   button {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
@@ -220,7 +220,7 @@ button:hover #clip {
 .site-footer {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* 🔍 transparence sur fond noir */
-    padding: 20px 10px;
+    padding: 10px 10px;
     text-align: center;
     font-family: 'Michroma', sans-serif;
     font-size: 0.8rem;
@@ -252,7 +252,7 @@ button:hover #clip {
   
   @media (max-width: 375px) {
   .site-footer {
-    padding: 10px 5px;     /* moins de padding pour réduire la hauteur */
+    padding: 5px 5px;     /* moins de padding pour réduire la hauteur */
     font-size: 0.7rem;     /* texte un peu plus petit */
   }
 
