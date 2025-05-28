@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   background: #000;
@@ -239,6 +243,20 @@ button:hover #clip {
     margin: 0 10px;
     transition: color 0.3s ease;
   }
+
+  .site-footer {
+  position: static; /* comportement par défaut */
+  ...
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
   
   .site-footer a:hover {
     color: #2efadf;
